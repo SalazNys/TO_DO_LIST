@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>TO DO LIST</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+	<form action="/" method="post">
+		<input type="text" name="todo" placeholder="what should i do ?">
+		<button type="submit">ADD</button>
+		<ul>
+		{{#elements}}
+			<li>
+				<input type="checkbox" name="click">{{.}}
+			</li>
+		{{/elements}}
+		</ul>
+
+	</form>
+</body>
+</html>
